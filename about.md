@@ -6,7 +6,7 @@ layout: page
 
 <p>I am second year graduate student working with Dr. Changwoo Min at
 System Software Research Group, Virgina Tech. My research interests
-are in computer systems and architecture. I am particularly interested
+are in computer systems. I am particularly interested
 in scalability of operating systems, concurrency and in-memory
 database.</p>
 
