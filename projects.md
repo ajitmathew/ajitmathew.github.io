@@ -4,6 +4,18 @@ layout: page
 ---
 # Projects
 
+## Hydralist
+HydraList, a new concurrent, scalable, and high performance in-memory
+index structure for massive multi-core machines. The key insight
+behind our design of HydraList is that an index structure can be
+divided into two components (search and data layers) which can
+be updated independently leading to lower synchronization overhead.
+By isolating the search layer, we are able to replicate it across
+NUMA nodes and reduce cache misses and remote memory accesses.
+As a result, our evaluation shows that HydraList outperforms other
+index structures especially in a variety of workloads and key types.
+Paper presented in VLDB 2020
+
 ## MVRLU
 Multi-Version Read-Log-Update is a synchronization mechanism that
 extends RLU using mutli-versioning, while preserving the benefits of
@@ -16,6 +28,7 @@ a concurrent garbage collector design that are ubiquitous to most MVCC
 designs.  As a result, MV-RLU outperforms other synchronization
 mechanisms in a variety of workloads and shows unmatched scalability
 even in write-intensive workloads.
+Paper present in ASPLOS 2019
 
 ## Key Value Store on FPGA
 During my time at Reniac, I wrote a key value store on FPGA which was
